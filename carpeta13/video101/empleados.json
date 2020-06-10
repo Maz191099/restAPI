@@ -7,14 +7,14 @@
      },
      {
           "id" : 2,
-          "nombre" : "Alejandra",
-          "empresa" : "EasyWebDev",
-          "trabajo" : "Diseñadora"
+          "nombre" : "Jess",
+          "empresa" : "UTT",
+          "trabajo" : "Desarrollador Web"
      },
      {
           "id" : 3,
-          "nombre" : "Pedro",
-          "empresa" : "EasyWebDev",
-          "trabajo" : "Aplicaciones Móviles"
+          "nombre" : "Mario",
+          "empresa" : "UTT",
+          "trabajo" : "Desarrollador Web"
      }
 ]
