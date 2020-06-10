@@ -27,3 +27,4 @@ function cargarDatos(){
     // enviar request
     xhr.send();
 }
+
