@@ -1,5 +1,5 @@
 // Callback en foreach
-
+/*
 const ciudades = ['Londres', 'México', 'Puebla', 'Apizaco'];
 // Inline callback
 /*ciudades.forEach(function (ciudad) {
@@ -11,7 +11,7 @@ function callback(pais) {
     console.log(ciudades)
 }
 ciudades.forEach(callback);*/
-
+/*
 function nuevoCiudad(ciudad, callback) {
     setTimeout(function () {
         ciudades.push(ciudad);
@@ -32,4 +32,30 @@ function mostrarCiudades() {
 nuevoCiudad('Paris', mostrarCiudades);
 
 mostrarCiudades();
+*/
+// Promises
+/*
+const espera = new Promise(function (resolve, reject) {
+   setTimeout(function(){
+        resolve('se ejecuto');
+   }, 5000);
+});
+espera.then(function(mensaje){
+    console.log(mensaje)
+})
+*/
 
+const aplicarDescuento = new Promise(function(resolve, reject){
+    const desc = false;
+    if(desc){
+        resolve('Descuento Aplicado');
+    }else{
+        reject('No se puede aplicar el descuento');
+    }
+});
+
+aplicarDescuento.then(function(msj){
+    console.log(msj);
+}).catch(function(error){
+    console.log(error);
+})
