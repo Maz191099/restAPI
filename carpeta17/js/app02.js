@@ -30,7 +30,6 @@ function cargarNombres(e) {
             })
             htmlNombres += `</ul>`
             document.getElementById('resultado').innerHTML = htmlNombres;
-        })
-        .catch(error => console.log(error));
+        });
     
 }
