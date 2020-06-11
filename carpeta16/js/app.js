@@ -36,3 +36,23 @@ function cargarJSON(){
 
 
 
+function cargarREST(){
+    fetch('https://picsum.photos/list')
+        .then(function(res){
+            return res.json();
+        })
+        .then(function(data){
+            let html = '';
+            data.forEach(function(imagen){
+                html += `
+                <li> <a target="_blank" href="${imagen.post_url}">Ver imagen</a>
+                    ${imagen.author}
+                </li>
+                `;
+            })
+            document.getElementById('resultado').innerHTML = html;
+        })
+        .catch(function(error){
+            console.log(error)
+        });
+}
