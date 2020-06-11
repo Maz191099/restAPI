@@ -14,7 +14,7 @@ function cargarJSON(){
         .then(res => res.json())
         .then(data =>{
             let html = '';
-            data.forEach(function(empleado){
+            data.forEach(empleado => {
                 html += `
                 <li>${empleado.nombre} ${empleado.puesto} </li>
                 `;
@@ -29,7 +29,7 @@ function cargarREST(){
         .then(res => res.json())
         .then(data =>{
             let html = '';
-            data.forEach(function(imagen){
+            data.forEach(imagen =>{
                 html += `
                 <li> <a target="_blank" href="${imagen.post_url}">Ver imagen</a>
                     ${imagen.author}
